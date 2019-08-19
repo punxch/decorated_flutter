@@ -212,7 +212,8 @@ class ImageView extends StatelessWidget {
   final VoidCallback loadFailedCallback;
 
   /// 加载进度回调
-  final ValueChanged loadingProgress;
+  // final ValueChanged loadingProgress;
+  final void Function(double, List<int>) loadingProgress;
 
   /// 加载完成回调
   final VoidCallback loadedCallback;
